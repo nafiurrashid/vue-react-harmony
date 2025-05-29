@@ -43,30 +43,30 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-black mb-6">
               Professional Experience
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700 font-medium">
               Building robust infrastructure and streamlining operations across various industries
             </p>
           </div>
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-lg transition-shadow border-2 border-gray-200">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900">
+                  <CardTitle className="text-2xl text-black font-bold">
                     {exp.title}
                   </CardTitle>
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-600">
-                    <div className="font-semibold text-primary text-lg">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-700">
+                    <div className="font-bold text-gray-900 text-lg">
                       {exp.company}
                     </div>
-                    <div className="flex items-center gap-4 text-sm">
+                    <div className="flex items-center gap-4 text-sm font-medium">
                       <div className="flex items-center gap-1">
                         <MapPin className="h-4 w-4" />
                         {exp.location}
@@ -82,8 +82,8 @@ const Experience = () => {
                   <ul className="space-y-2">
                     {exp.description.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-start">
-                        <span className="text-primary mr-2">•</span>
-                        <span className="text-gray-700">{item}</span>
+                        <span className="text-black mr-2 font-bold">•</span>
+                        <span className="text-gray-700 font-medium">{item}</span>
                       </li>
                     ))}
                   </ul>

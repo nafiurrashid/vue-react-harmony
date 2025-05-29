@@ -36,48 +36,48 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-black mb-6">
               Featured Projects
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
               Showcasing innovative DevOps solutions that drive efficiency and reliability
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-lg transition-shadow border-2 border-gray-200">
                 <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">
+                  <CardTitle className="text-xl text-black font-bold">
                     {project.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-700 mb-4 leading-relaxed font-medium">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                        className="bg-gray-900 text-white text-xs px-2 py-1 rounded font-medium"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" asChild>
+                    <Button variant="outline" size="sm" asChild className="font-bold">
                       <a href={project.github} className="flex items-center gap-2">
                         <Github className="h-4 w-4" />
                         Code
                       </a>
                     </Button>
-                    <Button size="sm" asChild>
+                    <Button size="sm" asChild className="font-bold">
                       <a href={project.demo} className="flex items-center gap-2">
                         <ExternalLink className="h-4 w-4" />
                         Demo

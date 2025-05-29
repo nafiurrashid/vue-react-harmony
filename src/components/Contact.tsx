@@ -39,23 +39,23 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-black mb-6">
               Let's Work Together
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto font-medium">
               Ready to optimize your infrastructure and streamline your operations? 
               Let's discuss how I can help your team achieve DevOps excellence.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow border-2 border-gray-200">
               <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">
+                <CardTitle className="text-2xl text-black font-bold">
                   Get In Touch
                 </CardTitle>
               </CardHeader>
@@ -65,14 +65,14 @@ const Contact = () => {
                     <a
                       key={index}
                       href={info.href}
-                      className="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                      className="flex items-center gap-4 p-3 rounded-lg hover:bg-gray-100 transition-colors"
                     >
-                      <div className="text-primary">
+                      <div className="text-black">
                         {info.icon}
                       </div>
                       <div>
-                        <div className="text-sm text-gray-500">{info.label}</div>
-                        <div className="text-gray-900 font-medium">{info.value}</div>
+                        <div className="text-sm text-gray-600 font-medium">{info.label}</div>
+                        <div className="text-black font-bold">{info.value}</div>
                       </div>
                     </a>
                   ))}
@@ -80,15 +80,15 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow border-2 border-gray-200">
               <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">
+                <CardTitle className="text-2xl text-black font-bold">
                   Connect With Me
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-700 mb-6 font-medium">
                     Follow my journey and connect with me on social platforms. 
                     I regularly share insights about DevOps practices, cloud technologies, 
                     and automation strategies.
@@ -100,7 +100,7 @@ const Contact = () => {
                         variant="outline"
                         size="lg"
                         asChild
-                        className="flex items-center gap-2"
+                        className="flex items-center gap-2 font-bold"
                       >
                         <a href={link.href}>
                           {link.icon}
@@ -110,7 +110,7 @@ const Contact = () => {
                     ))}
                   </div>
                   <div className="mt-6">
-                    <Button size="lg" className="w-full">
+                    <Button size="lg" className="w-full font-bold">
                       Download Resume
                     </Button>
                   </div>

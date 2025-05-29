@@ -17,10 +17,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">
+          <div className="text-2xl font-black text-black">
             DevOps Pro
           </div>
 
@@ -32,7 +32,7 @@ const Header = () => {
                   <NavigationMenuItem key={item.name}>
                     <NavigationMenuLink
                       href={item.href}
-                      className={navigationMenuTriggerStyle()}
+                      className={`${navigationMenuTriggerStyle()} font-bold text-gray-700 hover:text-black`}
                     >
                       {item.name}
                     </NavigationMenuLink>
@@ -61,7 +61,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
+                  className="px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-md transition-colors font-bold"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
