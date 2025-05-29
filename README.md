@@ -72,7 +72,7 @@ To connect a domain, navigate to Project > Settings > Domains and click Connect 
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
 
-##Quick ubuntu deployment script
+## Quick ubuntu deployment script
 ```
 git clone https://github.com/nafiurrashid/vue-react-harmony.git
 cd vue-react-harmony
