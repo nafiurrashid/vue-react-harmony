@@ -71,3 +71,15 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+##Quick ubuntu deployment script
+
+git clone https://github.com/nafiurrashid/vue-react-harmony.git
+cd vue-react-harmony/
+sudo apt update -y
+sudo apt install -y nodejs npm
+sudo npm install -g @vue/cli
+vue --version
+npm i
+#npm run dev # for dev server
+npm run build # for production
