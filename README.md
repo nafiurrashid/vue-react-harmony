@@ -75,7 +75,7 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-trick
 ##Quick ubuntu deployment script
 
 git clone https://github.com/nafiurrashid/vue-react-harmony.git
-cd vue-react-harmony/
+cd vue-react-harmony
 sudo apt update -y
 sudo apt install -y nodejs npm
 sudo npm install -g @vue/cli
